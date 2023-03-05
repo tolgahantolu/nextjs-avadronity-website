@@ -1,12 +1,37 @@
 {
   "name": "nextjs-avadronity-website",
   "version": "1.0.0",
-  "description": "",
+  "description": "created by Tolgahan Tolu",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format:ts": "prettier --write './client/src/**/*.{ts,tsx}' && prettier --write './server/**/*.{ts,tsx}' && npm lint:eslint --fix",
+    "format": "npm run format:ts && npm run format:css",
+    "format:check": "prettier -c './client/src/**/*.{ts,tsx}' && prettier -c './server/**/*.{ts,tsx}'",
+    "lint": "npm run lint:ts && npm run lint:css",
+    "lint:ts": "tsc && npm lint:eslint",
+    "lint:eslint": "eslint './client/src/**/*.{ts,tsx}' && eslint './server/**/*.{ts,tsx}'",
+    "lint:css": "stylelint --syntax scss \"./client/src/**/*.scss\"",
+    "format:css": "stylelint --fix --syntax scss \"./client/src/**/*.scss\"",
+    "export": "npm run build && next export",
+    "deploy": "npx surge out"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@atolye15/eslint-config": "^1.2.0",
+    "@atolye15/stylelint-config": "^3.0.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@types/jest": "^29.4.0",
+    "eslint": "^7.32.0",
+    "jest": "^29.4.3",
+    "jest-environment-jsdom": "^29.4.3",
+    "prettier": "^2.8.4",
+    "stylelint": "^14.16.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-prettier": "^3.0.0",
+    "surge": "^0.23.1",
+    "ts-jest": "^29.0.5"
+  }
 }
