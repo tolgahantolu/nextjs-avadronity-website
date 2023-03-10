@@ -2,7 +2,6 @@
   "name": "nextjs-avadronity-website",
   "version": "1.0.0",
   "description": "created by Tolgahan Tolu",
-  "main": "index.js",
   "scripts": {
     "format:ts": "prettier --write './client/src/**/*.{ts,tsx}' && prettier --write './server/**/*.{ts,tsx}' && npm lint:eslint --fix",
     "format": "npm run format:ts && npm run format:css",
@@ -21,12 +20,7 @@
   "devDependencies": {
     "@atolye15/eslint-config": "^1.2.0",
     "@atolye15/stylelint-config": "^3.0.1",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^14.0.0",
-    "@types/jest": "^29.4.0",
     "eslint": "^7.32.0",
-    "jest": "^29.4.3",
-    "jest-environment-jsdom": "^29.4.3",
     "prettier": "^2.8.4",
     "stylelint": "^14.16.0",
     "stylelint-config-prettier": "^9.0.5",

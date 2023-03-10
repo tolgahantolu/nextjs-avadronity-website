@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #__next {
+    @apply text-base capitalize font-poppins font-[400] text-theme-light-black bg-theme-light-black m-2 h-full;
+  }
+}
+
+$theme-black: #1c1d1c;
+$theme-light-black: #292d32;
+$theme-light-blue: #618ef6;
+$theme-smoke-white: #f7f9fd;
+
+.active {
+  background: $theme-light-blue !important;
+  color: $theme-smoke-white !important;
+}
