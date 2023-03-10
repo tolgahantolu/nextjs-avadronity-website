@@ -11,7 +11,7 @@ module.exports = {
         'theme-black': '#1c1d1c',
         'theme-light-black': '#292d32',
         'theme-light-blue': '#618ef6',
-        'theme-smoke-white': '#f7f9fd',
+        'theme-ice-blue': '#e1eafd',
       },
     },
   },
