@@ -47,7 +47,6 @@ const Navbar = () => {
   const router = useRouter();
   return (
     <div className="max-w-[250px] w-full h-full bg-white rounded-3xl flex flex-col justify-between items-center py-8">
-      {/* logo, user, menu */}
       <div className="flex flex-col items-start gap-8">
         <div className="flex flex-col items-center">
           <Link href="/" className="text-3xl leading-4 font-deca font-extrabold" data-testid="logo">
@@ -91,8 +90,6 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
-
-      {/* settings, explain */}
 
       <small className="text-xs mx-5 text-center">
         This demo project was created by{' '}
